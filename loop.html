@@ -1,0 +1,29 @@
+<html>
+	<body>
+		<script>
+		//while its true it will loop forever. 
+
+		var gamesplayed = 0;
+		var score = 0;
+		while (gamesplayed < 3) {
+			var choice = prompt("HOST: SHEll A or B or C");
+			alert("Rearranging shells......");
+			var guess = prompt("player: shell A or B or C");
+		
+			if (choice == guess) {
+				alert("correct");
+				score =  score + 1;
+			} else {
+				alert("nope!");
+			}
+						
+			gamesplayed = gamesplayed + 1;
+		}
+
+		alert("Score:" + score);		
+		
+		</script>
+
+	</body>
+
+</html>

@@ -1,0 +1,53 @@
+<html>
+	<head>HI</head>
+		<body>
+			<script>
+			function rightanswer()
+			{
+        		var answer = prompt("Here is a short math quiz. Let's srart with algebra. What is 2X-8 when X=12");
+			
+				if (answer == "16"){ 
+          			alert("Correct!");
+         		} else{ 
+          			alert("sorry but your answer is incorrect");
+          			rightanswer();
+        		}
+        	}
+      
+     		rightanswer();
+
+	      	function nextone()
+	      	{
+      			var next = prompt("now it is time for the next one. this is another algebra question. What is the length of a rectangle when the length is 2 more than 3 times the width and the width is represented by X?");
+     
+      			if (next == "3x+2") {
+      				alert("CORRECT AGAIN!!");
+      			}  else{
+      				alert("sorry but you are incorrect...");
+      			nextone();
+      			}
+      		}
+
+      		nextone();
+      	
+      		function thelast()
+      		{
+      			var lastone = prompt("this is your last question. What is Y when Y=2(12X)-4 and X=3");
+		  	
+		  		if (lastone == "68") {
+		  			alert("congratulations. You have passed the test!");
+		  		} else{
+		  			alert("awwww you were super close... Try again next time!!");
+		  			thelast();
+		  		}
+		  	}
+
+	      	thelast();
+
+      		</script>
+
+
+     
+      
+      	</body>
+</html>

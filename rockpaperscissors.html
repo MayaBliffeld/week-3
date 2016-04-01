@@ -1,0 +1,47 @@
+<html>
+	<title>
+	Rock paper scissors game!
+	</title>
+		<body>
+			<script>
+			var score = 0;
+            var gamesplayed = 0;
+			var userchoice = prompt("do you choose Rock, paper, or scissors?");
+            var computerchoice = Math.random();
+                if (computerchoice < .34) {
+                    computerchoice = "rock";
+                } else if (computerchoice <= .67) {
+                    computerchoice = "paper";
+                 } else {
+                    computerchoice = "Scissors";
+                }
+            function compare (choice1, choice2) {//choice1= the computer. 
+                if(choice1 == choice2) {
+                    return ("the result is a tie!");
+                    }
+                    else if(choice1 == "rock" ){
+                        
+                        if(choice2 == "paper") 
+                            return ("The player wins!");
+                        }
+                        else if(choice2 == "scissors") {
+                            return ("the computer wins!!");
+                    }
+                            gamesplayed = (gamesplayed + 1);
+                }           score = (score + 1);
+
+                    function compare (choice1, choice2) {
+                        if (choice1 == "paper") {
+                         if (choice2 == "rock")
+                                return ("the computer wins... SORRY!");
+                        }
+
+
+
+
+
+                    }
+
+			</script>
+		</body>
+</html>
